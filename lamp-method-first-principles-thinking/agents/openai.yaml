@@ -1,7 +1,0 @@
-interface:
-  display_name: "LAMP Method First Principles Thinking"
-  short_description: "First-principles reframing for hard questions"
-  default_prompt: "Use $lamp-method-first-principles-thinking to reframe this problem from first principles."
-
-policy:
-  allow_implicit_invocation: true
