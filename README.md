@@ -6,13 +6,13 @@ These are my personal skills. You might find them useful.
 
 - [LAMP Method First Principles Thinking](./lamp-method-first-principles-thinking/) - A first-principles reasoning skill for reframing hard questions, finding hidden assumptions, and turning surprising observations into falsifiable next experiments.
 - [Kernel Engineering](./kernel-engineering/) - A production kernel engineering skill for narrowing hot-path contracts, partitioning execution regimes, designing metadata ABIs, and validating high-performance compute kernels without regressions.
-- [RLM Model Evaluation Promotion](./rlm-model-evaluation-promotion/) - A model-eval and promotion discipline for separating ranking wins from generation wins, preserving safe baselines, and only promoting checkpoints that pass broad and live gates.
-- [RLM SFT RL Round Control](./rlm-sft-rl-round-control/) - A round-by-round SFT/RL optimization workflow for making one measurable improvement at a time while preserving prior gates.
-- [RLM Dataset Engineering](./rlm-dataset-engineering/) - A corpus-design skill for building held-out, OOD, hard-negative, balanced, and non-leaky datasets that expose real agent behavior rather than fixture memorization.
-- [RLM Harness Environment Validation](./rlm-harness-environment-validation/) - A harness and environment validation skill for proving that evals, route guards, execution sandboxes, and runtime dependencies measure the intended behavior.
-- [Inference Serving Benchmarking](./inference-serving-benchmarking/) - A serving benchmark skill for separating memory capacity, single-user streaming speed, aggregate throughput, queueing, and production inference experience.
-- [Production Checkpoint Export Serving](./production-checkpoint-export-serving/) - A production export and serving skill for turning candidate checkpoints into lineage-safe, rollback-ready serving artifacts.
-- [Research Optimization Documentation](./research-optimization-documentation/) - A documentation discipline for keeping optimization history, current status, commands, artifacts, and sober interpretation deduplicated and promotion-ready.
+- [Model Eval](./model-eval/) - A promotion discipline for separating ranking, generation, execution, OOD, and live-canary evidence before accepting a model checkpoint.
+- [Inference Engineering](./inference-engineering/) - A runtime and serving skill for streaming speed, aggregate throughput, memory pressure, checkpoint export, serving profiles, and rollback-safe deployment.
+- [RLM](./rlm/) - An end-to-end coding-agent skill for workflow contracts, tool/action behavior, project-building quality, qualitative generalization, and promotion loops.
+- [Env Harness](./env-harness/) - A validation skill for harnesses, route guards, sandboxes, canaries, dependencies, and runtime environments used by RLM/RL systems.
+- [RL](./rl/) - A reinforcement-learning skill for preference optimization, hard negatives, reward diagnostics, checkpoint selection, and generation preservation.
+- [SFT](./sft/) - A supervised fine-tuning skill for teaching strict formats, action chains, tool JSON, project trajectories, and behavior-first checkpoint selection.
+- [Dataset Engineering](./dataset-engineering/) - A corpus-design skill for held-out splits, OOD gates, hard negatives, balanced tool coverage, leakage prevention, and project-builder data.
 
 ## Structure
 
