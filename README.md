@@ -8,6 +8,7 @@ These are my personal skills. You might find them useful.
 - [Kernel Engineering](./kernel-engineering/) - A production kernel engineering skill for narrowing hot-path contracts, partitioning execution regimes, designing metadata ABIs, and validating high-performance compute kernels without regressions.
 - [Model Eval](./model-eval/) - A promotion discipline for separating ranking, generation, execution, OOD, and live-canary evidence before accepting a model checkpoint.
 - [Inference Engineering](./inference-engineering/) - A runtime and serving skill for streaming speed, aggregate throughput, memory pressure, checkpoint export, serving profiles, and rollback-safe deployment.
+- [Aria Intelligence](./aria-intelligence/) - A canonical Aria artifact skill for selecting the right surface, defining typed contracts, building bundles, uploading to local or cloud runtime profiles, and proving tools, agents, teams, and pipelines on live `/api/v1/run/*` paths.
 - [RLM](./rlm/) - An end-to-end coding-agent skill for workflow contracts, tool/action behavior, project-building quality, qualitative generalization, and promotion loops.
 - [Env Harness](./env-harness/) - A validation skill for harnesses, route guards, sandboxes, canaries, dependencies, and runtime environments used by RLM/RL systems.
 - [RL](./rl/) - A reinforcement-learning skill for preference optimization, hard negatives, reward diagnostics, checkpoint selection, and generation preservation.
