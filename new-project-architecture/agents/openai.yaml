@@ -1,0 +1,4 @@
+interface:
+  display_name: "New Project Architecture"
+  short_description: "Set elite production project structure"
+  default_prompt: "Use $new-project-architecture to plan and build a new project with strict production-grade structure, modular architecture, concise naming, and no placeholder implementations."
