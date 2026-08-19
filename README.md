@@ -4,6 +4,7 @@ These are my personal skills. You might find them useful.
 
 ## Skills
 
+- [Synthesys Bug Triage](./synthesys-bug-triage/) - A production bug-triage skill for investigating Synthesys backend issues across code, database, telemetry, and providers, then repairing the canonical root cause, verifying the real execution path, and shipping safely through staging, main, and redeploy.
 - [LAMP Method First Principles Thinking](./lamp-method-first-principles-thinking/) - A first-principles reasoning skill for reframing hard questions, finding hidden assumptions, and turning surprising observations into falsifiable next experiments.
 - [Kernel Engineering](./kernel-engineering/) - A production kernel engineering skill for narrowing hot-path contracts, partitioning execution regimes, designing metadata ABIs, and validating high-performance compute kernels without regressions.
 - [Model Eval](./model-eval/) - A promotion discipline for separating ranking, generation, execution, OOD, and live-canary evidence before accepting a model checkpoint.

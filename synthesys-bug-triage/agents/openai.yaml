@@ -1,0 +1,4 @@
+interface:
+  display_name: "Synthesys Bug Triage"
+  short_description: "Investigate and heal backend bugs correctly"
+  default_prompt: "Use $synthesys-bug-triage to investigate a Synthesys backend issue across code, database, telemetry, and providers, fix the root cause architecturally, then verify and ship it safely."
