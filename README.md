@@ -4,6 +4,7 @@ These are my personal skills. You might find them useful.
 
 ## Skills
 
+- [Agent Watch](./agent-watch/) - A video-analysis skill that vendors the upstream `claude-video` watch runtime, answers from observed frames plus transcript, and can distill a watch session into a new hyper-specific installed skill instead of a generic summary.
 - [New Project Architecture](./new-project-architecture/) - A production architecture skill for greenfield projects and major refactors that enforces concern-scoped structure, clean naming, modular file boundaries, concise READMEs, and real end-to-end implementations instead of placeholder architecture.
 - [Synthesys Bug Triage](./synthesys-bug-triage/) - A production bug-triage skill for investigating Synthesys backend issues across code, database, telemetry, and providers, then repairing the canonical root cause, verifying the real execution path, and shipping safely through staging, main, and redeploy.
 - [LAMP Method First Principles Thinking](./lamp-method-first-principles-thinking/) - A first-principles reasoning skill for reframing hard questions, finding hidden assumptions, and turning surprising observations into falsifiable next experiments.
