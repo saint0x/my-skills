@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Watch"
+  short_description: "Watch video and distill learned skills"
+  default_prompt: "Use $agent-watch to analyze a video or local recording, answer questions from what was actually shown and said, and when requested distill that watch session into a new hyper-specific installed skill."
