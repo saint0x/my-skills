@@ -1,4 +1,0 @@
-interface:
-  display_name: "Design Max"
-  short_description: "Design systems, slides, and ad creatives"
-  default_prompt: "Use $design-max to design product UI, UX systems, slides, and ad creatives with data-backed visual direction, token discipline, stack-aware implementation guidance, and multimodal design logic."

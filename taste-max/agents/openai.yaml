@@ -1,0 +1,4 @@
+interface:
+  display_name: "Taste Max"
+  short_description: "Taste-first design systems, UI, slides, and creatives"
+  default_prompt: "Use $taste-max to design premium, non-generic UI, websites, dashboards, brands, slides, and creatives by combining Taste Skill's strict anti-slop art direction with Design Max's searchable design intelligence, token discipline, stack-aware implementation guidance, and presentation logic."

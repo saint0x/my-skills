@@ -1,0 +1,4 @@
+interface:
+  display_name: "Opportunity Hunter"
+  short_description: "Find premium no-inventory business alpha"
+  default_prompt: "Use $opportunity-hunter to identify premium, no-inventory, high-upside business opportunities that fit my strengths in AI, branding, and elite visual positioning."

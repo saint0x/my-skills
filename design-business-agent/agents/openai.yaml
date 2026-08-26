@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Business Agent"
+  short_description: "Elite-taste, AI-compressed client web production"
+  default_prompt: "Use $design-business-agent to design and build a client landing page or web experience end-to-end: research, art direction, sharp copy, AI-generated cinematic assets, performance engineering, and QA."
