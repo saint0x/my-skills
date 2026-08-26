@@ -1,6 +1,8 @@
 # Generative Asset Pipeline
 
-For projects requiring custom cinematic or 3D-style assets, use the available Higgsfield pipeline and its supported generation models. `HIGGSFIELD_API_KEY` is read from the project `.env`.
+For projects requiring custom cinematic or 3D-style assets, use the available Higgsfield pipeline and its supported generation models.
+
+**Auth:** Higgsfield requires a key ID *and* a secret, not a single token — `HF_API_KEY` (the ID, a UUID) and `HF_API_SECRET` (the secret) are read from the project `.env`. The request header is `Authorization: Key ${HF_API_KEY}:${HF_API_SECRET}`. A single value with no colon is not valid credentials by itself — if a project's `.env` only has one Higgsfield value, get the missing half before assuming the integration works. There is no dedicated credits/balance API endpoint; check remaining credits at [cloud.higgsfield.ai](https://cloud.higgsfield.ai) directly, not through the API.
 
 The conceptual workflow:
 
