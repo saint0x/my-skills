@@ -2,15 +2,15 @@
 
 Before considering a project complete, inspect all five categories. Do not ship known sloppiness merely because the page technically works.
 
-## Self-QA Through Aegis
+## Self-QA Through Aegis and CUA
 
-Aegis is the studio's own real browser, not just a research tool — run the finished page through it before calling a project done, the same runtime used for research browsing.
+Aegis is the studio's own real browser, not just a research tool — run the finished page through it before calling a project done, the same runtime used for research browsing. CUA (`~/Desktop/cua`, a local computer-use runtime — invoke via `cargo run -p cua --` from that directory, or the built binary under `target/<triple>/release/cua` once compiled) supplies the piece Aegis doesn't: an actual pixel screenshot, since Aegis reads and acts on the DOM but has no screenshot command of its own.
 
 - **Self-QA (functional/structural):** `aegis --mode headless serve --detach`, then `aegis navigate <deployed-url>` followed by `page inspect`, `page actions`, `page text --scope main`, `page forms`, and `page links` against the live page. This confirms the deployed page actually renders, navigates, exposes the CTAs and forms you intended, and reads correctly — a real end-to-end check, not just "the build succeeded."
-- **Visual UI testing:** run the same navigate against `--mode headful` to open a real, visible rendered browser window on the live URL and eyeball it directly — this is how layout, spacing, imagery, and animation get checked against an actual browser engine rather than assumed from code. Resize that window (or reload with the runtime's viewport set) to mobile, tablet, and desktop widths in turn so the visual pass covers every breakpoint, not just the one the dev machine happens to be at.
-- **Performance smoke check:** treat a clean `navigate` + `page inspect` round trip through Aegis against the live deployed URL (not localhost) as the real-world load/render check — if the page is slow or hangs through Aegis on the actual network path, it will be slow for a visitor too. This catches real loading and responsiveness regressions; for hard numbers (Core Web Vitals, bundle size, memory profiling) still use the browser's own devtools or the project's build-level performance tooling — Aegis's job here is proving the page genuinely works end-to-end, not producing a metrics report.
+- **Visual UI testing:** open the live URL through Aegis in `--mode headful` so there's a real, visible rendered browser window, then capture it with CUA — `cua serve --addr 127.0.0.1:8765` once, then `cua screenshot --out <path>.png --json --max-width <N>` — to get an actual saved image rather than just an on-screen glance. Resize the Aegis window to mobile, tablet, and desktop widths and take one CUA screenshot at each so the visual pass produces reviewable artifacts for every breakpoint, not just an impression from one.
+- **Performance smoke check:** treat a clean `navigate` + `page inspect` round trip through Aegis against the live deployed URL (not localhost) as the real-world load/render check — if the page is slow or hangs through Aegis on the actual network path, it will be slow for a visitor too. This catches real loading and responsiveness regressions; for hard numbers (Core Web Vitals, bundle size, memory profiling) still use the browser's own devtools or the project's build-level performance tooling. (CUA's own `perf bench screenshot|stream|input` benchmarks CUA's capture/input latency, not the website — don't mistake it for a site performance report.)
 
-Do not consider the QA gate passed on dev-server output alone — the Aegis pass against the actual deployed URL is what confirms the client's real experience, not just what worked locally.
+Do not consider the QA gate passed on dev-server output alone — the Aegis-plus-CUA pass against the actual deployed URL is what confirms the client's real experience, not just what worked locally.
 
 ### Visual
 
