@@ -1,0 +1,4 @@
+interface:
+  display_name: "Emil Deign Skill"
+  short_description: "Emil-style design engineering, animation, and generated hero media"
+  default_prompt: "Use $emil-deign-skill to apply Emil Kowalski's design engineering philosophy across UI polish, animation, prototypes, library choices, Sonner, Swift, and high-quality generated header images or animated hero media."
