@@ -1,6 +1,6 @@
 ---
 name: design-business-agent
-description: Production agent for a design studio built on elite taste + AI-compressed production cost + extreme execution speed. Use when building or revising a client landing page, marketing site, or interactive web experience end-to-end — research, art direction, copy, AI-generated cinematic/3D assets (Higgsfield/Kling/Nano Banana), frame-sequence scroll engineering, performance, QA, and deploy. Not for backend, data, or infrastructure work unrelated to a client-facing web surface.
+description: Production agent for a design studio built on elite taste + AI-compressed production cost + extreme execution speed. Use when building or revising a client landing page, marketing site, or interactive web experience end-to-end — research, art direction, copy, AI-generated cinematic/3D assets (fal/Kling/Nano Banana), frame-sequence scroll engineering, performance, QA, and deploy. Not for backend, data, or infrastructure work unrelated to a client-facing web surface.
 ---
 
 # Design Business Agent
@@ -27,7 +27,7 @@ Two rules govern every taste decision:
 ## Composition With Other Skills
 
 - **Art direction, layout systems, token discipline, anti-slop rules, stack/component guidance:** invoke [taste-max](../taste-max/SKILL.md) — this skill does not duplicate that logic. Use its `search.py` grounding before making visual decisions.
-- **This skill adds the layers taste-max doesn't own:** the business/research/conversion layer, the generative asset pipeline (Higgsfield/Kling/Nano Banana), video and scroll-frame engineering, and the studio-level QA/shipping gate.
+- **This skill adds the layers taste-max doesn't own:** the business/research/conversion layer, the generative asset pipeline (fal/Kling/Nano Banana), video and scroll-frame engineering, and the studio-level QA/shipping gate.
 
 ## End-to-End Workflow
 
@@ -37,7 +37,7 @@ This is the concrete loop — distilled from real production runs — not a temp
 2. **Research before designing.** Pull current competitor sites, category leaders, and conversion patterns for this niche, and always check [refero.design](https://refero.design/) as the standing inspiration source. Browse with the local Aegis CLI — the agent has its own browser, see [references/research-and-strategy.md](references/research-and-strategy.md#browser-tooling) — rather than reasoning from memory. Separate evidence from heuristics from trend from taste — don't present one as another.
 3. **Establish art direction and information architecture together.** Derive page structure from visitor + proposition + awareness + objections + evidence + desired action — not from a default Hero → Logos → Features → Testimonials → Pricing → FAQ template. Ground the visual system with taste-max.
 4. **Write copy as interface, not filler.** Sharp, hard-hitting, and short: the load-bearing line in any section is one or two sentences, in as few words as the tone allows. See [references/copywriting.md](references/copywriting.md).
-5. **Generate custom assets where stock/CSS can't deliver the concept.** Image gen (Nano Banana or current best) → video/animation gen (Kling 3.0 via Higgsfield, or current best) → treat output as raw material, not final. See [references/asset-pipeline.md](references/asset-pipeline.md). `HIGGSFIELD_API_KEY` lives in the project `.env`.
+5. **Generate custom assets where stock/CSS can't deliver the concept.** Image gen (Nano Banana or current best) → video/animation gen (Kling or current best), both served through fal by default → treat output as raw material, not final. See [references/asset-pipeline.md](references/asset-pipeline.md). `FAL_KEY` lives in the project `.env`; Higgsfield credentials (`HF_API_KEY`/`HF_API_SECRET`) are kept as an available secondary provider.
 6. **Engineer the assets for the web, not just place them.** Compress video, encode responsively, and for scroll-driven animation, prefer an extracted-and-optimized frame sequence over a raw video scrub for deterministic control. See [references/video-and-frame-engineering.md](references/video-and-frame-engineering.md).
 7. **Integrate, then iteratively compress.** Ship a working version, then run explicit optimization passes — "this is laggy, make it load significantly faster" is a real, repeatable step, not a one-time task. Re-check the gradient/mask/timing after every pass; compression regressions hide in the transition points.
 8. **Design mobile as its own pass, not an afterthought.** After desktop is right, do a dedicated mobile simplification pass — reduced motion complexity, resized/re-encoded media, rebuilt composition where needed. See [references/performance-and-motion.md](references/performance-and-motion.md).
