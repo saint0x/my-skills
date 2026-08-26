@@ -15,6 +15,26 @@ Distinguish between:
 
 Do not confuse one for another. Research informs the work. It does not dictate it.
 
+## Standing Inspiration Source
+
+Always check [refero.design](https://refero.design/) during research — it's the studio's default source for premium landing-page and web-design inspiration, alongside whatever live competitor/category sites the project calls for. Treat what you find there as **trend and taste input**, not evidence — pull directional cues (composition, motion language, hero patterns) from it, but still ground the actual conversion structure in the visitor's journey below, not in whatever looks good on a gallery site.
+
+Browse it (and any live competitor site) with the local Aegis CLI — see [Browser Tooling](#browser-tooling) below — rather than reasoning from memory or a static screenshot alone.
+
+## Browser Tooling
+
+The studio agent has its own browser via the local `aegis` CLI — use it for research crawls, not just QA. Typical flow:
+
+```bash
+aegis --mode headless serve --addr 127.0.0.1:7878 --detach
+aegis --server-addr 127.0.0.1:7878 navigate https://refero.design/
+aegis --server-addr 127.0.0.1:7878 page text --scope main
+aegis --server-addr 127.0.0.1:7878 page find <what you're looking for>
+aegis --server-addr 127.0.0.1:7878 search <query>
+```
+
+Use `navigate` + `page text`/`page find`/`page open-link` to actually read competitor and inspiration sites rather than guessing at their content, and `search` for general web research from inside the same runtime. This is the same runtime taste-max points to for verifying real browser behavior — reuse one running `serve` instance across a research pass instead of starting a new one per lookup.
+
 ## Understand the User Before the Interface
 
 Before designing, determine:

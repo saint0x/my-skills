@@ -2,6 +2,8 @@
 
 Before considering a project complete, inspect all five categories. Do not ship known sloppiness merely because the page technically works.
 
+Verify against a real running browser, not just a build log — use the local Aegis CLI (`aegis --mode headless serve --detach`, then `aegis navigate <deployed-url>` and `page text`/`page actions` against the live page) to confirm the deployed page actually renders, navigates, and reads correctly, the same way it's used for research browsing.
+
 ### Visual
 
 - typography
