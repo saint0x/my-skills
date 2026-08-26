@@ -2,7 +2,15 @@
 
 Before considering a project complete, inspect all five categories. Do not ship known sloppiness merely because the page technically works.
 
-Verify against a real running browser, not just a build log — use the local Aegis CLI (`aegis --mode headless serve --detach`, then `aegis navigate <deployed-url>` and `page text`/`page actions` against the live page) to confirm the deployed page actually renders, navigates, and reads correctly, the same way it's used for research browsing.
+## Self-QA Through Aegis
+
+Aegis is the studio's own real browser, not just a research tool — run the finished page through it before calling a project done, the same runtime used for research browsing.
+
+- **Self-QA (functional/structural):** `aegis --mode headless serve --detach`, then `aegis navigate <deployed-url>` followed by `page inspect`, `page actions`, `page text --scope main`, `page forms`, and `page links` against the live page. This confirms the deployed page actually renders, navigates, exposes the CTAs and forms you intended, and reads correctly — a real end-to-end check, not just "the build succeeded."
+- **Visual UI testing:** run the same navigate against `--mode headful` to open a real, visible rendered browser window on the live URL and eyeball it directly — this is how layout, spacing, imagery, and animation get checked against an actual browser engine rather than assumed from code. Resize that window (or reload with the runtime's viewport set) to mobile, tablet, and desktop widths in turn so the visual pass covers every breakpoint, not just the one the dev machine happens to be at.
+- **Performance smoke check:** treat a clean `navigate` + `page inspect` round trip through Aegis against the live deployed URL (not localhost) as the real-world load/render check — if the page is slow or hangs through Aegis on the actual network path, it will be slow for a visitor too. This catches real loading and responsiveness regressions; for hard numbers (Core Web Vitals, bundle size, memory profiling) still use the browser's own devtools or the project's build-level performance tooling — Aegis's job here is proving the page genuinely works end-to-end, not producing a metrics report.
+
+Do not consider the QA gate passed on dev-server output alone — the Aegis pass against the actual deployed URL is what confirms the client's real experience, not just what worked locally.
 
 ### Visual
 
