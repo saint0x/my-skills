@@ -17,6 +17,7 @@ These are my personal skills. You might find them useful.
 - [RL](./rl/) - A reinforcement-learning skill for preference optimization, hard negatives, reward diagnostics, checkpoint selection, and generation preservation.
 - [SFT](./sft/) - A supervised fine-tuning skill for teaching strict formats, action chains, tool JSON, project trajectories, and behavior-first checkpoint selection.
 - [Dataset Engineering](./dataset-engineering/) - A corpus-design skill for held-out splits, OOD gates, hard negatives, balanced tool coverage, leakage prevention, and project-builder data.
+- [Design Loop](./design-loop/) - A fresh-context critique loop for high-leverage design work, extracting a checkable reference bar and iterating builder output through independent critics until it wins.
 - [Bambu Labs](./bambu-labs/) - Dry-run, upload, and cautiously initiate local Bambu Lab print jobs from validated plain `.gcode`, using Bambu LAN FTPS/MQTT handoffs.
 - [CAD](./cad/) - Create, modify, inspect, and validate STEP-first parametric CAD parts and assemblies from natural language, drawings, references, and Python CAD sources.
 - [CAD Viewer](./cad-viewer/) - Start CAD Viewer and return review links for CAD, implicit CAD, robot-description, G-code, DXF, and mesh artifacts.
