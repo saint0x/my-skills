@@ -1,4 +1,4 @@
 interface:
   display_name: "Design Loop"
-  short_description: "Fresh-context design critique loop"
-  default_prompt: "Use $design-loop to improve an important design artifact against a strong reference."
+  short_description: "Premium fresh-context critique loop"
+  default_prompt: "Use $design-loop to improve an important premium design artifact against a strong reference."
