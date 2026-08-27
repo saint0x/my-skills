@@ -13,6 +13,8 @@ The method is adapted from Matt Shumer's Gauntlet Loop. The core idea: the conte
 
 The production bar is premium, not merely clean. A passing result should feel specific to the brand, physically or spatially believable when relevant, restrained in palette, crisp in hierarchy, and deliberate in motion. The loop should make the work feel less generic every round.
 
+Always use `/Users/deepsaint/Desktop/design-business/inspo/` as the standing inspiration library and quality floor for premium visual work. During preflight and teardown, inspect the relevant stills and videos in that folder when they are available, especially for web, brand, hero, 3D, product, editorial, and motion work. Use them to sharpen `bar.md` and critic briefs; do not copy them literally or force their style onto an unrelated brand.
+
 ## When To Use
 
 Use this skill for high-leverage design work where the user wants a stronger result than a single-pass implementation or review. Do not use it for routine bug fixes, broad whole-site redesigns, or large multi-surface projects unless the user explicitly accepts the cost. If the scope is broad, choose or ask for the highest-signal hero piece first.
@@ -38,6 +40,7 @@ If the user says skip for the reference, propose three strong candidate bars wit
 Before building, verify the loop can actually judge the work. Report the preflight in one concise block:
 
 - Fetch or open the reference. Screenshot visual references, read document references, or capture frames for motion/video references. If the reference is blocked or missing, ask for another.
+- Inspect relevant files from `/Users/deepsaint/Desktop/design-business/inspo/` as an additional quality bar for premium visual work. For video references, sample enough frames to understand composition, lighting, motion, texture, and transitions.
 - Confirm the output can be rendered: screenshots for a site or app, frames/filmstrip for animation or video, PDF render for documents, image export for visual assets.
 - Name any generation tools required, such as image, video, voice, browser, screenshot, design, 3D, or rendering tools, and whether they are available.
 - Confirm input files exist, including `design-system.md`, brand docs, scripts, existing drafts, screenshots, or source files.
@@ -47,7 +50,7 @@ Then state what is working, what is missing, and which critic would be blind if 
 
 ## Phase 3: Teardown
 
-Study the reference before building. Write 5 to 9 concrete mechanisms to `bar.md` in the active workspace or project artifact directory.
+Study the user's reference and the relevant `/Users/deepsaint/Desktop/design-business/inspo/` files before building. Write 5 to 9 concrete mechanisms to `bar.md` in the active workspace or project artifact directory.
 
 Mechanisms must be checkable by looking at the rendered output. Avoid adjectives.
 
@@ -89,6 +92,8 @@ When the goal is brand, hero, 3D, motion, or product presentation work, make the
 - Production finish: responsive framing, export quality, compression, fallbacks, and reduced-motion states are part of the deliverable.
 
 For a Rise-like premium reference, useful teardown language might be: tactile logo-as-object, anodized silver and space gray metals, reflective surfaces, warm orange illumination, crisp edge definition, restrained palette, surface transitions, and precision with warmth. Treat these as examples of mechanisms to extract, not a universal style to apply.
+
+If the user gives no external reference, choose the most relevant files from `/Users/deepsaint/Desktop/design-business/inspo/` as the reference bar and say which files are setting the bar. If the folder is unavailable, continue with the user's supplied reference and report that the standing inspiration library could not be inspected.
 
 ## Phase 4: Loop
 
