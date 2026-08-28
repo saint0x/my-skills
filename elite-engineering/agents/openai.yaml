@@ -1,0 +1,4 @@
+interface:
+  display_name: "Elite Engineering"
+  short_description: "High-bar engineering discipline"
+  default_prompt: "Use $elite-engineering to implement this with strong architecture, error handling, cleanup, and validation."
