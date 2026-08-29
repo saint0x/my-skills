@@ -1,0 +1,4 @@
+interface:
+  display_name: "Advertising Imagery Agent"
+  short_description: "Premium product ad image sets"
+  default_prompt: "Use $advertising-imagery-agent to plan a painpoint-led photoreal product image set for this campaign."
