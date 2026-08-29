@@ -1,0 +1,4 @@
+interface:
+  display_name: "Marketing And Advertising Agent"
+  short_description: "Painkiller-first conversion marketing"
+  default_prompt: "Use $marketing-and-advertising-agent to create a painkiller-first campaign strategy for this product."
