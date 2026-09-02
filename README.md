@@ -26,6 +26,7 @@ These are my personal skills. You might find them useful.
 - [CAD Viewer](./cad-viewer/) - Start CAD Viewer and return review links for CAD, implicit CAD, robot-description, G-code, DXF, and mesh artifacts.
 - [DXF](./dxf/) - Generate, regenerate, and validate 2D DXF drawings from Python ezdxf sources.
 - [G-code](./gcode/) - Generate, inspect, dry-run, and statically validate plain FDM `.gcode` from 3D mesh files by orchestrating real slicer CLIs.
+- [Human Writing](./human-writing/) - A prose craft skill for humanizing, drafting, rewriting, and critiquing text so it feels specific, natural, and authored rather than generic or AI-polished.
 - [Implicit CAD](./implicit-cad/) - Create, edit, render, and snapshot browser-native implicit CAD `.implicit.js` and `.implicit.mjs` files with GLSL signed-distance fields.
 - [SDF](./sdf/) - Author and validate SDFormat/SDF models and worlds, including simulator handoff workflows.
 - [SendCutSend](./sendcutsend/) - Review DXF and STEP/STP uploads for SendCutSend.com orders against ordering guides, catalogs, and service specs.
